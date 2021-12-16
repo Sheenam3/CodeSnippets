@@ -71,3 +71,17 @@ func addToTable(name string, pid int, process string, m *sync.Mutex) {
 	fmt.Println("Table-------", data.TableData)
 
 }
+
+
+/*Output- MarkStatuschanged to M
+Table------- [0xc00009a050]
+Table------- [0xc00009a050 0xc00009a0a0]
+Table------- [0xc00009a050 0xc00009a0a0 0xc00009a0f0]
+Table------- [0xc00009a050 0xc00009a0a0 0xc00009a0f0 0xc00009a140]
+Table------- [0xc00009a050 0xc00009a0a0 0xc00009a0f0 0xc00009a140 0xc00009a190]
+0 &{sheenam 1 hostpid status M}
+1 &{Krishna 2 hostpid status NM}
+2 &{red 3 hostpid status NM}
+3 &{yellow 5 hostpid status NM}
+4 &{hello 4 hostpid status NM}
+*/
